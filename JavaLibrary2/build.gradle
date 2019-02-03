@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':JavaLibrary1')
+    implementation project(':JavaLibrary3')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
